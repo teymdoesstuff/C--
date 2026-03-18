@@ -9,13 +9,13 @@ C## compiles to x86-64 assembly and produces real native executables on Linux.
 Requires: `gcc`, `as` (GNU assembler), `ld`
 
 ```bash
-gcc -o cmm chh_compiler.c
+gcc -o chh chh_compiler.c
 ```
 
 ## Compiling a C## Program
 
 ```bash
-./cmm hello.chh hello.s   # compile to assembly
+./chh hello.chh hello.s   # compile to assembly
 as -o hello.o hello.s     # assemble
 ld -o hello hello.o       # link
 ./hello                   # run
