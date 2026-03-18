@@ -1,8 +1,8 @@
 # C## Programming Language
-### v0.5 Beta 1
+### v1.0 Stable
 
 A simple compiled programming language in the C family, inspired by Scratch.
-C## compiles to x86-64 and ARM64 assembly and produces real native executables on Linux.
+C## compiles to x86-64 assembly and produces real native executables on Linux.
 
 ## Building the Compiler
 
@@ -222,3 +222,13 @@ define main() {
     say("Correct! You got it in " + tries + " tries!");
 }
 ```
+
+## What's New in v1.0
+- String variables (`set name to "Alice"`)
+- String comparison (`if name = "Alice"`)
+- `>=` and `<=` operators
+- `min()`, `max()`, `pick random X to Y`
+- Function arguments (`define greet(name)`)
+- `break` and `continue` in loops
+- File I/O (`writefile`, `readfile`)
+- String length (`length of name`)
